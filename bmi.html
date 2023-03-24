@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lets Check It BMI Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">LET's CHECK IT</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="bmi.html">BMI Calculator</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="recipe.html">Healthy Recipes<span class="sr-only">(current)</span></a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+	
+
+	<div class="container">
+		<h1>Lets Check It BMI Tracker</h1>
+		<form onsubmit="calculateBMI(); return false;">
+			<div class="form-group">
+				<label for="height">Height (cm):</label>
+				<input type="number" class="form-control" id="height" placeholder="Enter height">
+			</div>
+			<div class="form-group">
+				<label for="weight">Weight (kg):</label>
+				<input type="number" class="form-control" id="weight" placeholder="Enter weight">
+			</div>
+			<button type="submit" class="btn btn-primary">Calculate BMI</button>
+		</form>
+		<div id="result"></div>
+        <div class="footer">
+            <a href="http://www.freepik.com">Bg powered by rawpixel.com / Freepik</a>
+        </div>
+	</div>
+
+	<script src="script.js"></script>
+    
+</body>
+</html>
